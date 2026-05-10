@@ -4,6 +4,8 @@ A macOS QuickLook plugin that shows thumbnails and previews for BrickLink Studio
 
 The .io format is BrickLink Studio's proprietary binary format, storing brick placements, colors, and model configuration. Rendering a meaningful QuickLook preview requires parsing this format and rendering a 3D or at minimum a flat thumbnail. This QL plugin does that. 
 
+![StudioQL screenshot](images/StudioQL_plugin_screenshot.png)
+
 ## What it does
 
 - **Thumbnails**: Shows the model thumbnail in Finder icon view, column view, and Cover Flow
