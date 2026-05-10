@@ -76,4 +76,3 @@ cp -r ~/Library/Developer/Xcode/DerivedData/.../YourApp.app /Applications/
 
 A critical distinction: Since Mac OS Sequoia (15.0) dropped support for .qlgenerator plugins entirely, any GitHub repo using the old format will not work on Sequoia or later. You need the modern App Extension (.appex) format, where the preview plugin is bundled inside a macOS app. Quicklook extensions are embedded in an accompanying app that install them the first time it is launched. Here I include the StudioQL app for this purpose.
 
-
