@@ -29,7 +29,7 @@ Launch the app at least once — this is mandatory; macOS will not register the 
 
 Enable the extension — go to System Settings → Privacy & Security → Extensions → Quick Look and toggle the extension on.
 
-Test it — select a file in Finder and press Space. 
+Test it — select a .io file in Finder and press Space. 
 
 ## How it works
 
