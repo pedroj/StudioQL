@@ -11,6 +11,20 @@ The .io format is BrickLink Studio's proprietary binary format, storing brick pl
 - **Thumbnails**: Shows the model thumbnail in Finder icon view, column view, and Cover Flow
 - **Preview**: Press Space on a `.io` file to see the full model preview with version and part count
 
+## Install binaries
+
+### Installing the Built App
+
+Download the `.zip` file of the release [./release/StudioQL_release.zip] and run the first time the .app. This will register and install the plugins. 
+
+Once the .app is in `/Applications`:
+
+Launch the app at least once — this is mandatory; macOS will not register the extension until the host app has run.
+
+Enable the extension — go to System Settings → Privacy & Security → Extensions → Quick Look and toggle the extension on.
+
+Test it — select a `.io` file in Finder and press Space. 
+
 ## Build & Install
 
 ```bash
@@ -19,32 +33,47 @@ The .io format is BrickLink Studio's proprietary binary format, storing brick pl
 
 Or build from Xcode with the StudioQL scheme (requires automatic signing with a development team).
 
-## Install binaries
+### Building from Source (Modern .appex)
 
-### Installing the Built App
+#### Prerequisites
 
-Download the .zip file of the release [./release/StudioQL_release.zip] and run the first time the .app. This will register and install the plugins. 
+Xcode (latest version from the Mac App Store)
 
-Once the .app is in /Applications:
+Command Line Tools: `xcode-select --install`
 
-Launch the app at least once — this is mandatory; macOS will not register the extension until the host app has run.
+Steps
+Clone the repo:
 
-Enable the extension — go to System Settings → Privacy & Security → Extensions → Quick Look and toggle the extension on.
+```bash
+git clone https://github.com/owner/repo.git
+cd repo
+git submodule update --init --recursive  # if the repo uses submodules
+```
 
-Test it — select a .io file in Finder and press Space. 
+Open the Xcode project:
 
-## How it works
+```bash
+open *.xcodeproj
 
-`.io` files are ZIP archives (encrypted with PKZIP traditional encryption) containing:
-- `thumbnail.png` — rendered model preview
-- `model.ldr` — LDraw model data
-- `.info` — JSON metadata (version, part count)
+```
+Set the build target — in Xcode's toolbar, select the main app target (not the .appex sub-target) and choose "My Mac" as the destination.
 
-The plugin extracts and displays the embedded thumbnail.
+Handle signing — go to each target → Signing & Capabilities → check "Automatically manage signing" and select your Apple ID team. For repos without a paid Developer account, set the team to your personal free account; this is sufficient for local builds.
+
+Build and run (⌘R or ⌘B) — Xcode compiles the app and the embedded extension together. The .app lands in `~/Library/Developer/Xcode/DerivedData/.../Build/Products/Release/`.
+
+Copy to Applications:
+
+```bash
+cp -r ~/Library/Developer/Xcode/DerivedData/.../YourApp.app /Applications/
+```
 
 ## Requirements
 
 - macOS 12.0+
 - Xcode 15+
 - Apple Developer account (for code signing the Quick Look extensions)
+
+A critical distinction: Since Mac OS Sequoia (15.0) dropped support for .qlgenerator plugins entirely, any GitHub repo using the old format will not work on Sequoia or later. You need the modern App Extension (.appex) format, where the preview plugin is bundled inside a macOS app. Quicklook extensions are embedded in an accompanying app that install them the first time it is launched. Here I include the StudioQL app for this purpose.
+
 
