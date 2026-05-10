@@ -19,9 +19,10 @@ Or build from Xcode with the StudioQL scheme (requires automatic signing with a 
 
 ## Install binaries
 
-Download the .zip files of the release and run the first time the .app. This will register and install the plugins. 
+### Installing the Built App
 
-#### Installing the Built App
+Download the .zip file of the release [./release/StudioQL_release.zip] and run the first time the .app. This will register and install the plugins. 
+
 Once the .app is in /Applications:
 
 Launch the app at least once — this is mandatory; macOS will not register the extension until the host app has run.
