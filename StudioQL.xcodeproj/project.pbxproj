@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1000001 /* StudioQLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001; };
-		A1000002 /* IOFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002; };
-		A1000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000003; };
-		A1000004 /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004; };
-		A1000005 /* IOFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002; };
-		A1000006 /* StudioQLThumbnail.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A3000002; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A1000007 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006; };
-		A1000008 /* IOFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002; };
-		A1000009 /* StudioQLPreview.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A3000003; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1000001 /* StudioQLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001 /* StudioQLApp.swift */; };
+		A1000002 /* IOFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* IOFileReader.swift */; };
+		A1000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000003 /* Assets.xcassets */; };
+		A1000004 /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004 /* ThumbnailProvider.swift */; };
+		A1000005 /* IOFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* IOFileReader.swift */; };
+		A1000006 /* StudioQLThumbnail.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A3000002 /* StudioQLThumbnail.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1000007 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006 /* PreviewProvider.swift */; };
+		A1000008 /* IOFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* IOFileReader.swift */; };
+		A1000009 /* StudioQLPreview.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A3000003 /* StudioQLPreview.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A4000001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A5000001;
+			containerPortal = A5000001 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A6000002;
 			remoteInfo = StudioQLThumbnail;
 		};
 		A4000002 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A5000001;
+			containerPortal = A5000001 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A6000003;
 			remoteInfo = StudioQLPreview;
@@ -42,8 +42,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A1000006,
-				A1000009,
+				A1000006 /* StudioQLThumbnail.appex in Embed Foundation Extensions */,
+				A1000009 /* StudioQLPreview.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,21 +71,21 @@
 		A8000001 = {
 			isa = PBXGroup;
 			children = (
-				A2000002,
-				A8000002,
-				A8000003,
-				A8000004,
-				A8000005,
+				A2000002 /* IOFileReader.swift */,
+				A8000002 /* StudioQL */,
+				A8000003 /* StudioQLThumbnail */,
+				A8000004 /* StudioQLPreview */,
+				A8000005 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 		A8000002 /* StudioQL */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001,
-				A2000003,
-				A2000008,
-				A200000B,
+				A2000001 /* StudioQLApp.swift */,
+				A2000003 /* Assets.xcassets */,
+				A2000008 /* Info.plist */,
+				A200000B /* StudioQL.entitlements */,
 			);
 			path = StudioQL;
 			sourceTree = "<group>";
@@ -93,9 +93,9 @@
 		A8000003 /* StudioQLThumbnail */ = {
 			isa = PBXGroup;
 			children = (
-				A2000004,
-				A2000005,
-				A2000009,
+				A2000004 /* ThumbnailProvider.swift */,
+				A2000005 /* Info.plist */,
+				A2000009 /* StudioQLThumbnail.entitlements */,
 			);
 			path = StudioQLThumbnail;
 			sourceTree = "<group>";
@@ -103,9 +103,9 @@
 		A8000004 /* StudioQLPreview */ = {
 			isa = PBXGroup;
 			children = (
-				A2000006,
-				A2000007,
-				A200000A,
+				A2000006 /* PreviewProvider.swift */,
+				A2000007 /* Info.plist */,
+				A200000A /* StudioQLPreview.entitlements */,
 			);
 			path = StudioQLPreview;
 			sourceTree = "<group>";
@@ -113,9 +113,9 @@
 		A8000005 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3000001,
-				A3000002,
-				A3000003,
+				A3000001 /* StudioQL.app */,
+				A3000002 /* StudioQLThumbnail.appex */,
+				A3000003 /* StudioQLPreview.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,28 +125,28 @@
 /* Begin PBXNativeTarget section */
 		A6000001 /* StudioQL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9000001;
+			buildConfigurationList = A9000001 /* Build configuration list for PBXNativeTarget "StudioQL" */;
 			buildPhases = (
-				AB000001,
-				AB000002,
-				A7000001,
+				AB000001 /* Sources */,
+				AB000002 /* Resources */,
+				A7000001 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AC000001,
-				AC000002,
+				AC000001 /* PBXTargetDependency */,
+				AC000002 /* PBXTargetDependency */,
 			);
 			name = StudioQL;
 			productName = StudioQL;
-			productReference = A3000001;
+			productReference = A3000001 /* StudioQL.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A6000002 /* StudioQLThumbnail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9000002;
+			buildConfigurationList = A9000002 /* Build configuration list for PBXNativeTarget "StudioQLThumbnail" */;
 			buildPhases = (
-				AB000003,
+				AB000003 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -154,14 +154,14 @@
 			);
 			name = StudioQLThumbnail;
 			productName = StudioQLThumbnail;
-			productReference = A3000002;
+			productReference = A3000002 /* StudioQLThumbnail.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		A6000003 /* StudioQLPreview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9000003;
+			buildConfigurationList = A9000003 /* Build configuration list for PBXNativeTarget "StudioQLPreview" */;
 			buildPhases = (
-				AB000004,
+				AB000004 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -169,7 +169,7 @@
 			);
 			name = StudioQLPreview;
 			productName = StudioQLPreview;
-			productReference = A3000003;
+			productReference = A3000003 /* StudioQLPreview.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -180,9 +180,9 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2630;
 			};
-			buildConfigurationList = A9000004;
+			buildConfigurationList = A9000004 /* Build configuration list for PBXProject "StudioQL" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,13 +191,13 @@
 				Base,
 			);
 			mainGroup = A8000001;
-			productRefGroup = A8000005;
+			productRefGroup = A8000005 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6000001,
-				A6000002,
-				A6000003,
+				A6000001 /* StudioQL */,
+				A6000002 /* StudioQLThumbnail */,
+				A6000003 /* StudioQLPreview */,
 			);
 		};
 /* End PBXProject section */
@@ -207,7 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000003,
+				A1000003 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000001,
-				A1000002,
+				A1000001 /* StudioQLApp.swift in Sources */,
+				A1000002 /* IOFileReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000004,
-				A1000005,
+				A1000004 /* ThumbnailProvider.swift in Sources */,
+				A1000005 /* IOFileReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000007,
-				A1000008,
+				A1000007 /* PreviewProvider.swift in Sources */,
+				A1000008 /* IOFileReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,13 +246,13 @@
 /* Begin PBXTargetDependency section */
 		AC000001 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A6000002;
-			targetProxy = A4000001;
+			target = A6000002 /* StudioQLThumbnail */;
+			targetProxy = A4000001 /* PBXContainerItemProxy */;
 		};
 		AC000002 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A6000003;
-			targetProxy = A4000002;
+			target = A6000003 /* StudioQLPreview */;
+			targetProxy = A4000002 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -262,19 +262,46 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RASNRWHHJ7;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RASNRWHHJ7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -286,68 +313,107 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RASNRWHHJ7;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RASNRWHHJ7;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		AD000003 /* Debug - StudioQL */ = {
+		AD000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = StudioQL/StudioQL.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				INFOPLIST_FILE = StudioQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.studioql.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				MARKETING_VERSION = 1.0;
 			};
 			name = Debug;
 		};
-		AD000004 /* Release - StudioQL */ = {
+		AD000004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = StudioQL/StudioQL.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				INFOPLIST_FILE = StudioQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.studioql.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				MARKETING_VERSION = 1.0;
 			};
 			name = Release;
 		};
-		AD000005 /* Debug - Thumbnail */ = {
+		AD000005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = StudioQLThumbnail/StudioQLThumbnail.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = StudioQLThumbnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,19 +421,22 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.studioql.app.thumbnail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				MARKETING_VERSION = 1.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		AD000006 /* Release - Thumbnail */ = {
+		AD000006 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = StudioQLThumbnail/StudioQLThumbnail.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = StudioQLThumbnail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,19 +444,22 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.studioql.app.thumbnail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				MARKETING_VERSION = 1.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		AD000007 /* Debug - Preview */ = {
+		AD000007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = StudioQLPreview/StudioQLPreview.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = StudioQLPreview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,23 +467,23 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.studioql.app.preview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				MARKETING_VERSION = 1.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		AD000008 /* Release - Preview */ = {
+		AD000008 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = StudioQLPreview/StudioQLPreview.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_HARDENED_RUNTIME = YES;
-				CODE_SIGN_ENTITLEMENTS = StudioQLPreview/StudioQLPreview.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = StudioQLPreview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -419,10 +491,9 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.studioql.app.preview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				MARKETING_VERSION = 1.0;
-				MARKETING_VERSION = 1.0;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -430,44 +501,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9000001 /* StudioQL */ = {
+		A9000001 /* Build configuration list for PBXNativeTarget "StudioQL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD000003,
-				AD000004,
+				AD000003 /* Debug */,
+				AD000004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9000002 /* StudioQLThumbnail */ = {
+		A9000002 /* Build configuration list for PBXNativeTarget "StudioQLThumbnail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD000005,
-				AD000006,
+				AD000005 /* Debug */,
+				AD000006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9000003 /* StudioQLPreview */ = {
+		A9000003 /* Build configuration list for PBXNativeTarget "StudioQLPreview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD000007,
-				AD000008,
+				AD000007 /* Debug */,
+				AD000008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9000004 /* Project */ = {
+		A9000004 /* Build configuration list for PBXProject "StudioQL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD000001,
-				AD000002,
+				AD000001 /* Debug */,
+				AD000002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
-	rootObject = A5000001;
+	rootObject = A5000001 /* Project object */;
 }
